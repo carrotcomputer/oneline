@@ -17,6 +17,12 @@
  * -----------------------------------------------------------------------------
  */
 
+$emeraldGreen: #48dc69;
+
+html, body{
+  height: 100%;
+}
+
 .center{
   text-align: center;
 }
@@ -28,6 +34,29 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+
+//Height hacking
+body .ember-view:first-of-type {
+    height: 100%;
+}
+
+.inherit-dimensions {
+    width: inherit;
+    height: inherit;
+}
+.inherit-dimensions .liquid-child {
+    width: inherit;
+    height: inherit;
+}
+
+.emerald-green-background{
+  background-color: $emeraldGreen;
+}
+
+.white-background {
+  background-color: #fff;
 }
 
 /**
