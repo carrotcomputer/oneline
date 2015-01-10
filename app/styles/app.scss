@@ -18,9 +18,16 @@
  */
 
 $emeraldGreen: #48dc69;
+$salmonRed: #f3676a;
+$deepBlue: #389bf3;
+$velvetPurple: #8b6ff2;
 
 html, body{
   height: 100%;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .center{
@@ -38,6 +45,18 @@ html, body{
 
 .emerald-green-background{
   background-color: $emeraldGreen;
+}
+
+.salmon-red-background{
+  background-color: $salmonRed;
+}
+
+.deep-blue-background{
+  background-color: $deepBlue;
+}
+
+.velvet-purple-background{
+  background-color: $velvetPurple;
 }
 
 .white-background {
@@ -82,9 +101,14 @@ body .ember-view:first-of-type {
 .conversations-container{
   nav{
     padding: 2em 0 1em 0;
-    border-bottom: 1px solid #000;
-    h4{
+    background-color: $emeraldGreen;
+    h3{
       margin: 0;
+      padding: 0% 30%;
+      color: #fff;
+    }
+    .settings-button{
+      margin-left: 52.5%;
     }
   }
   .conversations-list{
@@ -92,13 +116,16 @@ body .ember-view:first-of-type {
     ul{
       padding: inherit;
       li{
-        padding: 0.25em 1em;
-        border-bottom: 1px solid #000;
+        padding: 0.75em 1em;
         list-style-type: none;
-        .user-graphic{
           .user-icon{
+            width: 1.25em;
+            height: 1.25em;
             float: left;
             font-size: 4em;
+            -webkit-border-radius: 0.625em;
+            background: url('img/leon.jpg') no-repeat;
+            background-size: contain;
           }
           .noti{
             position: relative;
@@ -106,12 +133,27 @@ body .ember-view:first-of-type {
             float: left;
             font-size: 1.5em;
             color: red;
-          } 
-        }
+          }
+          .new-icon{
+            width: 1.25em;
+            height: 1.25em;
+            float: left;
+            font-size: 4em;
+            -webkit-border-radius: 0.625em;
+            border: 2px solid #fff;
+            p{
+              margin: -15px -1px -15px 0;
+              text-align: center;
+              color: #fff;
+              font-weight: 200;
+            }
+          }
         h2{
           margin: 0;
-          padding: 1em 3em;
+          width: 18em;
+          padding: 1em 4em;
           font-size: 1.5em;
+          color: #fff;
         }
       }
     }
@@ -129,7 +171,7 @@ body .ember-view:first-of-type {
 .conversation-container{
   position: relative;
   .back-button{
-    padding: 0% 8%;
+    padding: 3% 8%;
     font-size: 3em;
     i{
       color: #fff;

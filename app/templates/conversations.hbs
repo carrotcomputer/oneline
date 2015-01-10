@@ -1,22 +1,45 @@
 <div class="conversations-container fluid-container">
   <div class="row">
     <nav class="col-xs-12">
-      <h4 class="center">Conversations</h6>
+      <div class="row">
+        <div class="col-xs-3">
+          <h3>Oneline</h3>
+        </div><!--.col-xs-3-->
+        <div class="settings-button col-xs-2 col-xs-offset-6">
+          <h3>{{fa-icon "cog"}}</h3>
+        </div>
+      </div><!--.row-->
     </nav><!--.col-xs-12-->
   </div><!--.row-->
   <div class="conversations-list col-xs-12">
     <ul>
-      <li {{action "goToConversation"}}>
-        <div class="user-graphic">
-          <div class="user-icon">
-            {{fa-icon "user"}}
-          </div><!--.user-icon-->
+      <li {{action "goToConversation"}} class="salmon-red-background">
+          <div class="user-icon"></div><!--.user-icon-->
           <div class="noti">
             {{fa-icon "circle"}}
           </div><!--.noti-->
-        </div><!--.user-graphic-->
         <div class="user-name">
           <h2>Simon</h2>
+        </div><!--.user-name-->
+      </li>
+      <li {{action "goToConversation"}} class="deep-blue-background">
+        <div class="user-icon"></div><!--.user-icon-->
+        <div class="user-name">
+          <h2>Leon Rossiter</h2>
+        </div><!--.user-name-->
+      </li>
+      <li {{action "goToConversation"}} class="velvet-purple-background">
+        <div class="user-icon"></div><!--.user-icon-->
+        <div class="user-name">
+          <h2>Zarino</h2>
+        </div><!--.user-name-->
+      </li>
+      <li {{action "goToConversation"}} class="emerald-green-background">
+        <div class="new-icon">
+          <p>+</p>
+        </div><!--.new-icon-->
+        <div class="user-name">
+          <h2>New oneline</h2>
         </div><!--.user-name-->
       </li>
     </ul>

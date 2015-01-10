@@ -1,11 +1,11 @@
 export default function(){
   this.transition(
     this.toRoute('conversation'),
-    this.use('toRight')
+    this.use('toLeft')
   );
   
   this.transition(
     this.toRoute('conversations'),
-    this.use('toLeft')
+    this.use('toRight')
   );
 }
