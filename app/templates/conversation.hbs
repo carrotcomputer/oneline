@@ -6,5 +6,14 @@
     <div class="message col-xs-12">
       <h2>Have you ever been on SMF? Stupid Mate Referrals</h2>
     </div><!--.message-->
+    {{#if reply}}
+    <div class="reply col-xs-12">
+      {{textarea}}
+      <button {{action "cancelReply"}} class="btn btn-default">Cancel</button>
+    </div>
+    {{/if}}
+    <div class="col-xs-12">
+      <button {{action "startReply"}} class="btn btn-default">Reply</button>
+    </div>
   </div><!--.row-->
 </div><!--.conversation-container-->
