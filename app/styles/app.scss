@@ -30,10 +30,39 @@
 
 .conversations-container{
   nav{
-    padding: 1em;
+    padding: 2em 0 1em 0;
     border-bottom: 1px solid #000;
-    h3{
+    h4{
       margin: 0;
+    }
+  }
+  .conversations-list{
+    padding: 0;
+    ul{
+      padding: inherit;
+      li{
+        padding: 0.25em 1em;
+        border-bottom: 1px solid #000;
+        list-style-type: none;
+        .user-graphic{
+          .user-icon{
+            float: left;
+            font-size: 4em;
+          }
+          .noti{
+            position: relative;
+            margin: 0em -1em;
+            float: left;
+            font-size: 1.5em;
+            color: red;
+          } 
+        }
+        h2{
+          margin: 0;
+          padding: 1em 3em;
+          font-size: 1.5em;
+        }
+      }
     }
   }
 }

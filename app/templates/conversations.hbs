@@ -1,7 +1,24 @@
 <div class="conversations-container fluid-container">
   <div class="row">
     <nav class="col-xs-12">
-      <h3 class="center">Conversations</h6>
+      <h4 class="center">Conversations</h6>
     </nav><!--.col-xs-12-->
   </div><!--.row-->
+  <div class="conversations-list col-xs-12">
+    <ul>
+      <li {{action "goToConversation"}}>
+        <div class="user-graphic">
+          <div class="user-icon">
+            {{fa-icon "user"}}
+          </div><!--.user-icon-->
+          <div class="noti">
+            {{fa-icon "circle"}}
+          </div><!--.noti-->
+        </div><!--.user-graphic-->
+        <div class="user-name">
+          <h2>Simon</h2>
+        </div><!--.user-name-->
+      </li>
+    </ul>
+  </div>
 </div><!--.conversations-container-->
