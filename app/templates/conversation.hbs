@@ -1,7 +1,9 @@
 <div class="conversation-container fluid-container full-height">
   <div class="row full-height">
-    <div class="col-xs-4 col-xs-offset-4">
-      {{#link-to "conversations"}}<button class="btn btn-default">Back</button>{{/link-to}}
+    <div class="back-button col-xs-2">
+      {{#link-to "conversations"}}
+        {{fa-icon "angle-left"}}
+      {{/link-to}}
     </div>
     <div class="message col-xs-12">
       <h1>Hello! I'm sending you a one line message. How are you?</h1>
@@ -12,8 +14,10 @@
       <button {{action "cancelReply"}} class="btn btn-default">Cancel</button>
     </div>
     {{/if}}
-    <div class="col-xs-12">
-      <button {{action "startReply"}} class="btn btn-default">Reply</button>
+    <div class="reply-container col-xs-12 navbar-fixed-bottom">
+      <div {{action "startReply"}} class="reply-button center-block">
+        {{fa-icon "angle-up"}}
+      </div>
     </div>
   </div><!--.row-->
 </div><!--.conversation-container-->

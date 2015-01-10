@@ -128,13 +128,31 @@ body .ember-view:first-of-type {
 
 .conversation-container{
   position: relative;
+  .back-button{
+    padding: 0% 8%;
+    font-size: 3em;
+    i{
+      color: #fff;
+    }
+  }
   .message{
     height: 50%;
     overflow: hidden;
     h1{
+      margin: 0;
       padding: 0% 5%;
       font-size: inherit;
       color: #fff;
+    }
+  }
+  .reply-container{
+    text-align: center;
+    .reply-button{
+      padding: 0% 8%;
+      font-size: 3em;
+      i{
+        color: #fff;
+      }
     }
   }
 }
