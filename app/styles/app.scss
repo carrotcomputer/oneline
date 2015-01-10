@@ -29,7 +29,11 @@
  */
 
 .conversations-container{
-  h6{
-    
+  nav{
+    padding: 1em;
+    border-bottom: 1px solid #000;
+    h3{
+      margin: 0;
+    }
   }
 }
