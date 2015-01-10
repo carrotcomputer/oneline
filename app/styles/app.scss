@@ -104,8 +104,10 @@ body .ember-view:first-of-type {
     background-color: $emeraldGreen;
     h3{
       margin: 0;
-      padding: 0% 30%;
       color: #fff;
+    } 
+    .title{
+      padding: 0% 12.5%;
     }
     .settings-button{
       margin-left: 52.5%;
