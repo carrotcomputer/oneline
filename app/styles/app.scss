@@ -36,6 +36,13 @@ html, body{
   flex-direction: column;
 }
 
+.emerald-green-background{
+  background-color: $emeraldGreen;
+}
+
+.white-background {
+  background-color: #fff;
+}
 
 //Height hacking
 body .ember-view:first-of-type {
@@ -50,6 +57,10 @@ body .ember-view:first-of-type {
   transition: all 0.3s;
 }
 
+.full-height{
+  height: 100%;
+}
+
 .inherit-dimensions {
     width: inherit;
     height: inherit;
@@ -59,13 +70,6 @@ body .ember-view:first-of-type {
     height: inherit;
 }
 
-.emerald-green-background{
-  background-color: $emeraldGreen;
-}
-
-.white-background {
-  background-color: #fff;
-}
 
 /**
  * 2.0 Conversations View
@@ -125,6 +129,12 @@ body .ember-view:first-of-type {
 .conversation-container{
   position: relative;
   .message{
-    margin-top: 10%;
+    height: 50%;
+    overflow: hidden;
+    h1{
+      padding: 0% 5%;
+      font-size: inherit;
+      color: #fff;
+    }
   }
 }

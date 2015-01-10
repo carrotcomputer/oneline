@@ -5,5 +5,9 @@ export default Ember.Route.extend({
     this.render();
     
     controller.set('controllers.application.background', 'emerald-green-background');
+    
+    setTimeout(function(){
+      textFit($('.message')[0])
+    },100);
   }
 });
