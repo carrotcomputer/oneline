@@ -4,8 +4,23 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"Hello\"><param name=\"ios-package\" value=\"hello\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "com.example.hello": {
+            "PACKAGE_NAME": "com.oneline.onelineapp"
+        }
+    },
     "dependent_plugins": {}
 }

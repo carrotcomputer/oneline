@@ -10,4 +10,8 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="DisallowOverscroll" value="true" />
+    <feature name="CustomKeyboard">
+        <param name="ios-package" value="customKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

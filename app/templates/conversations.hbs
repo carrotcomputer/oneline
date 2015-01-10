@@ -13,33 +13,23 @@
   </div><!--.row-->
   <div class="conversations-list col-xs-12">
     <ul>
-      <li {{action "goToConversation"}} class="salmon-red-background">
+      {{#each conversation in model}}
+      <li {{action "goToConversation"}} {{bind-attr class="backgroundColour"}}>
           <div class="user-icon"></div><!--.user-icon-->
           <div class="noti">
             {{fa-icon "circle"}}
           </div><!--.noti-->
         <div class="user-name">
-          <h2>Simon</h2>
+          <h2>{{conversation.full_name}}</h2>
         </div><!--.user-name-->
       </li>
-      <li {{action "goToConversation"}} class="deep-blue-background">
-        <div class="user-icon"></div><!--.user-icon-->
-        <div class="user-name">
-          <h2>Leon Rossiter</h2>
-        </div><!--.user-name-->
-      </li>
-      <li {{action "goToConversation"}} class="velvet-purple-background">
-        <div class="user-icon"></div><!--.user-icon-->
-        <div class="user-name">
-          <h2>Zarino</h2>
-        </div><!--.user-name-->
-      </li>
+      {{/each}}
       <li {{action "goToConversation"}} class="emerald-green-background">
         <div class="new-icon">
           <p>+</p>
         </div><!--.new-icon-->
         <div class="user-name">
-          <h2>New oneline</h2>
+          <h2>New Oneline</h2>
         </div><!--.user-name-->
       </li>
     </ul>
